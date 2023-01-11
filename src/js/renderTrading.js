@@ -13,6 +13,11 @@ export const renderTrading = () => {
       <div class="item_content">
         ${ item.content }
       </div>
+      <div class="item__trade">
+        <a href="${ item.link }">
+          <button class="trade_btn">Giao dịch ngay</button>
+        </a>
+      </div>
     </div>`
   }).join(``)
 } 

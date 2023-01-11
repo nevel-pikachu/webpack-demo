@@ -1,0 +1,80 @@
+.mobile_container {
+  .header_section {
+    position: relative;
+    display: flex;
+    padding: 16px 0px 16px 16px;
+  }
+  
+  .header {
+    &__logo {
+      flex: 1;
+      width: 122px;
+      height: 32px;
+    }
+  
+    .logo {
+      &__content {
+        font-size: 24px;
+        color: #FAAC2E;
+      }
+    }
+  
+    &__menu {
+      max-width: 24px;
+      margin-top: 6px;
+      margin-right: 4px;
+      cursor: pointer;
+    }
+  
+    &__action {
+      flex: 1;
+    }
+  
+    .action {
+      &__wallet_linked {
+        width: 120px;
+        height: 30px;
+        background-color: #FAAC2E;
+        border-radius: 8px;
+        color: #FFFFFF;
+  
+        &:hover,
+        &:focus {
+          animation: pulse 1s;
+          box-shadow: 0 0 0 2em transparent;
+        }
+      }
+    }
+  
+    .menu_expand {
+      position: absolute;
+      top: 44px;
+      left: 12px;
+      display: none;
+      width: 100px;
+      height: auto;
+      transition: 1s linear;
+      background: #FAFAFA;
+  
+      &.active {
+        display: block;
+      }
+  
+      .menu__item {
+        margin: 12px 12px;
+      }
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 adjust-hue(#ef6eae, 45deg);
+    }
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--hover);
+    }
+  }
+}

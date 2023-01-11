@@ -9,15 +9,19 @@
   <script src='main.js'></script>
 </head>
 <body>
-  <div id="desktop">
+  <div id="_desktop" class="desktop_container">
     <%= require('html-loader!./components/desktop/header.html').default %>
     <%= require('html-loader!./components/desktop/discovery.html').default %>
     <%= require('html-loader!./components/desktop/reason.html').default %>
     <%= require('html-loader!./components/desktop/trading.html').default %>
     <%= require('html-loader!./components/desktop/footer.html').default %>
   </div>
-  <!-- <div id="mobile">
+  <div id="_mobile" class="mobile_container">
     <%= require('html-loader!./components/mobile/header.html').default %>
-  </div> -->
+    <%= require('html-loader!./components/mobile/discovery.html').default %>
+    <%= require('html-loader!./components/mobile/reason.html').default %>
+    <%= require('html-loader!./components/mobile/trading.html').default %>
+    <%= require('html-loader!./components/mobile/footer.html').default %>
+  </div>
 </body>
 </html>

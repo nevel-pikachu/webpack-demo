@@ -1,0 +1,40 @@
+<div class="header_section header ">
+  <div class="header__menu menu" @click="handleClickMenu">
+    <img src="../../images/menu.svg"/>
+  </div>
+  <div class="menu_expand" :class="{ active: this.enableMenu}">
+    <div class="dropdown menu__item">
+      <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown"
+        aria-expanded="false">
+        Giao dịch
+      </div>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+    <div class="dropdown menu__item">
+      <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown"
+        aria-expanded="false">
+        Hỗ trợ
+      </div>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="header__logo logo">
+    <nuxt-link to="/">
+      <span class="logo__content">VinEX</span>
+    </nuxt-link>
+  </div>
+
+  <div class="header__action action">
+    <button class="action__wallet_linked">
+      Liên kết ví
+    </button>
+  </div>
+</div>

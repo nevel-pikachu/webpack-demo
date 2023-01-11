@@ -5,4 +5,35 @@ body {
   button {
     border: none;
   }
+  font-family: ' Roboto' sans-serif;
+
+  .hidden {
+    display: none;
+  }
+
+  .desktop_container {
+    max-width: 1920px;
+    position: relative;
+    margin: 0 auto;
+    font-family: 'RoRoboto';
+    -webkit-user-select: none;
+    user-select: none;
+    .container {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+  }
+
+  .mobile_container {
+    max-width: 375px;
+    position: relative;
+    margin: 0 auto;
+    font-family: 'RoRoboto';
+    -webkit-user-select: none;
+    user-select: none;
+    .container {
+      max-width: 1320px;
+      margin: 0 auto;
+    }
+  }
 }

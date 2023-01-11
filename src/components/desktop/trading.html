@@ -1,0 +1,20 @@
+<div class="trading-section">
+  <div class="trading container">
+    <div class="trading__title">Đối tác đáng tin cậy cho hành trình của bạn</div>
+    <div class="trading__note">Giao dịch bằng VND với phí 0đ</div>
+    <div class="trading__package">
+      <div class="item" v-for="item in tradingList">
+        <div class="item__img">
+          <img :src="item.imgSrc" :alt="item.title"/>
+        </div>
+        <div class="item__title"> {{ item.title }}</div>
+        <div class="item__content"> {{ item.content }}</div>
+        <div class="item__trade">
+          <nuxt-link :to="item.link">
+            <button class="trade_btn">Giao dịch ngay</button>
+          </nuxt-link>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

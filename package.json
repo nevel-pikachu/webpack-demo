@@ -1,0 +1,37 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "webpack for html, css and js project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --config config/webpack.dev.js --watch",
+    "prod": "webpack --config config/webpack.prod.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nevel-pikachu/webpack-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nevel-pikachu/webpack-demo/issues"
+  },
+  "homepage": "https://github.com/nevel-pikachu/webpack-demo#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "node-sass": "^8.0.0",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

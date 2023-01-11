@@ -1,27 +1,3 @@
-<div class="footer_section">
-  <div class="footer_section__item">
-      <div class="title">Về chúng tôi</div>
-      <div class="label" v-for="about in aboutUsList">
-          <nuxt-link :to="about.link"> {{ about.label }}</nuxt-link>
-      </div>
-  </div>
-  <div class="footer_section__item">
-      <div class="title">Sản phẩm</div>
-      <div class="label" v-for="product in productList" >
-          <nuxt-link :to="product.link"> {{ product.label }}</nuxt-link>
-      </div>
-  </div>
-  <div class="footer_section__item">
-      <div class="title">Dịch vụ</div>
-      <div class="label" v-for="service in serviceList">
-          <nuxt-link :to="service.link"> {{ service.label }}</nuxt-link>
-      </div>
-  </div>
-  <div class="footer_section__item">
-      <div class="title">Hỗ trợ</div>
-      <div class="label" v-for="support in supportList">
-          <nuxt-link :to="support.link"> {{ support.label }}</nuxt-link>
-      </div>
-  </div>
+<div class="footer_section" id="footer_section">
 </div>
 <div class="end_footer">VinEX © 2022</div>

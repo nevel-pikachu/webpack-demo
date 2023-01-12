@@ -2,6 +2,7 @@ const paths = require('./paths.js')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: paths.src + '/index.js',
@@ -25,10 +26,6 @@ module.exports = {
           'sass-loader',
         ],
       },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-      },
     ],
   },
   optimization: {
@@ -43,7 +40,11 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'style.min.css'
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "./src/images", to: "assets/images" },
+      ],
     })
   ],
-  mode: 'production'
 }
